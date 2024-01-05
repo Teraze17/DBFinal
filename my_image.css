@@ -1,0 +1,174 @@
+
+/* .my-image {
+    width: 1536px; 
+    height: 576px; 
+}  */
+
+
+body {
+    text-align: center; /* Center the heading */
+    font-family: 'TheDesiredFont', sans-serif; /* Replace 'YourFont' with your font choice */
+    color: #333; /* Default text color */
+    font-size: 2em; /* Adjust the font size as needed */
+}
+
+.title-style {
+    text-align: center; /* This will center your text */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Ensures overflow text is hidden - optional, based on your design */
+    font-family: 'TheDesiredFont', sans-serif; /* Replace with the actual font family if it's different */
+    font-size: 48px; /* Adjust size as needed */
+    font-weight: 700; /* Adjust weight as needed, 700 is usually for bold */
+    color: #333; /* Adjust color as needed */
+    margin-top: 50px;
+    margin-bottom: 20px; /* Adds some space below the title */
+}
+
+.highlight {
+    color: #1cd4db; /* Color for the 'Search RNA Data' part */
+    display: block; /* Make 'Search RNA Data' go on a new line */
+  }
+
+h1 {
+    color: #333;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 30px 20px;
+    }
+}
+
+/* Add some spacing above the paragraph elements directly within the content-container */
+.content-container > p {
+    margin-top: 20px; /* Adjust the value as needed for more space */
+}
+
+/* Alternatively, if you have a class for the form elements, you can add margin below them */
+.form-element { /* This is a placeholder class name, replace with your actual class if you have one */
+    margin-top: 20px; /* Adjust the value as needed for more space */
+}
+
+  
+
+form {
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+
+/* Start Analysis button styles */
+#startAnalysisButton {
+    font-size: 20px; /* Larger font size */
+    background-color: #a4d6e7; /* Light blue background color */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for larger button size */
+    margin-top: 10px; /* Margin on top for spacing */
+    width: 36.5%; /* One-third width of the container */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Block-level element */
+    
+    margin-right: auto; /* Align to the right */
+}
+
+#startAnalysisButton:hover {
+    background-color: #9ccfe0; /* Slightly darker blue on hover */
+}
+
+/* Responsive design for the button on smaller screens */
+@media (max-width: 768px) {
+    #startAnalysisButton {
+        font-size: 18px; /* Slightly smaller font size on mobile */
+        width: 50%; /* Wider button on smaller screens for better tap targets */
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    #startAnalysisButton {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+#upload-container {
+    position: fixed; /* 固定定位 */
+    bottom: 10px; /* 离底部10px */
+    left: 10px; /* 离左边更远一些 */
+    padding: 10px; /* 添加一些内边距 */
+    background-color: white; /* 设置背景颜色 */
+    border-top-right-radius: 10px; /* 右上角圆角 */
+    border: 1px solid #ddd; /* 添加边框 */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* 添加阴影效果 */
+}
+
+#fileToUpload {
+    width: auto; /* 将宽度设置为自动，以便根据内容调整大小 */
+}
+
+/* 可以添加一个类来特别控制上传按钮的样式 */
+.upload-btn-wrapper {
+    display: flex; /* 使用flex布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: flex-start; /* 水平方向从左边开始对齐 */
+}
+
+.upload-btn-wrapper input[type="submit"] {
+    margin-left: 10px; /* 在上传按钮左侧添加一些间隔 */
+}

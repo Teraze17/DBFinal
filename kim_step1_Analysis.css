@@ -1,0 +1,122 @@
+
+.loading-container {
+    text-align: center; /* Center the loading bar and text */
+    margin-top: 50vh; /* Position the loading bar roughly in the middle of the page vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+.loading-bar {
+    width: 50%; /* The width of the loading bar */
+    height: 20px; /* The height of the loading bar */
+    border: 1px solid #000; /* Border of the loading bar */
+    margin: 0 auto; /* Center the loading bar horizontally */
+    position: relative; /* Positioning context for the progress element */
+    overflow: hidden; /* Ensure the inner div doesn't go outside the border */
+}
+
+.loading-progress {
+    height: 100%; /* Full height of the parent */
+    background-color: #000; /* Color of the loading progress */
+    width: 0%; /* Initial width of the progress element */
+    position: absolute; /* Absolute positioning inside the loading bar */
+    animation: load 2s; /* Apply the animation */
+}
+
+@keyframes load {
+    0% { width: 0%; }
+    50% { width: 10%; }
+    70% { width: 60% }
+    100% { width: 100%; }
+}
+
+p {
+    margin-top: 10px; /* Spacing between the loading bar and the text */
+}
+
+.hidden {
+    display: none;
+}
+
+
+.image-container {
+    position: relative; /* 设置相对定位，作为子元素的定位上下文 */
+    display: inline-block; /* 将图片和下载按钮组合起来 */
+}
+
+.image-container img {
+    display: block; /* 防止图片下方有空隙 */
+    width: 100%; /* 或者是您希望的任何宽度 */
+    height: auto; /* 保持图片的纵横比 */
+}
+
+.image-wrapper {
+    position: relative; /* Set relative positioning context for absolute children */
+    text-align: center; /* Center the text (optional) */
+    margin-bottom: 20px; /* Space between image wrappers */
+}
+
+.image-wrapper h2{
+    margin-top: 100px;
+}
+
+.image-size1 {
+    width: 30%;
+    height: 30%; 
+    margin: 10px 0; 
+}
+
+.image-size2 {
+    width: 95%; 
+    height: 95%; 
+    margin: 0px 0; 
+}
+
+.download-button {
+    position: absolute; /* Position the button absolutely to the bottom center of the parent */
+    margin-bottom: 20px;
+    bottom: -50px; /* Adjust as needed for spacing from the bottom of the image */
+    left: 50%; /* Start at 50% from the left */
+    transform: translateX(-50%); /* Shift the button to the left by half its width to center it */
+    padding: 8px 12px; /* Padding inside the button */
+    background-color: #f2f2f2; /* Button background color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border: 1px solid #000; /* Button border */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.download-button:hover {
+    background-color: #ddd; /* Button hover color */
+}
+
+.download-button .fas {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+#myButton {
+    /* Position the button at the bottom right corner */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+
+    /* Styling the button */
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #add8e6;
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold font */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+    cursor: pointer; /* Cursor to indicate it's clickable */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#myButton:hover {
+    /* Slightly different gradient on hover */
+    background-color: #9acfe7;
+}
